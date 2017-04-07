@@ -11801,7 +11801,7 @@ This seems to be a clear case of classification since the data is supposed to be
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -11811,7 +11811,7 @@ This seems to be a clear case of classification since the data is supposed to be
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">f1_score</span>
 
 <span class="c1"># Read student data</span>
-<span class="n">student_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;student-data.csv&quot;</span><span class="p">)</span>
+<span class="n">student_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;docs/student-data.csv&quot;</span><span class="p">)</span>
 <span class="k">print</span> <span class="s2">&quot;Student data read successfully!&quot;</span>
 </pre></div>
 
@@ -11853,7 +11853,7 @@ This seems to be a clear case of classification since the data is supposed to be
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">## get the number of columns of the dataset</span>
@@ -11882,7 +11882,7 @@ This seems to be a clear case of classification since the data is supposed to be
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[48]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11897,7 +11897,7 @@ This seems to be a clear case of classification since the data is supposed to be
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -11914,7 +11914,7 @@ This seems to be a clear case of classification since the data is supposed to be
 
 
 <span class="c1"># TODO: Calculate graduation rate</span>
-<span class="n">grad_rate</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_passed</span> <span class="o">*</span> <span class="mi">100</span><span class="o">/</span> <span class="n">n_students</span><span class="p">)</span>
+<span class="n">grad_rate</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">n_passed</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_students</span><span class="p">))</span>
 
 <span class="c1"># Print the results</span>
 <span class="k">print</span> <span class="s2">&quot;Total number of students: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_students</span><span class="p">)</span>
@@ -11938,7 +11938,7 @@ This seems to be a clear case of classification since the data is supposed to be
 Number of features: 30
 Number of students who passed: 265
 Number of students who failed: 130
-Graduation rate of the class: 67.00%
+Graduation rate of the class: 67.09%
 </pre>
 </div>
 </div>
@@ -11961,7 +11961,7 @@ Graduation rate of the class: 67.00%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12043,7 +12043,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12096,7 +12096,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">X_all</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">300</span>
@@ -12110,7 +12110,7 @@ Feature values:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[52]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12143,7 +12143,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">sklearn</span>
@@ -12171,7 +12171,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12209,7 +12209,7 @@ Test set: 95 samples
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
@@ -12224,7 +12224,7 @@ Test set: 95 samples
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[55]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12279,9 +12279,22 @@ Test set: 95 samples
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p><img src='SVM_2.png'>
- <img src='Naive_Bayes.png'>
-  <img src='knn.png'></p>
+<p><img src='SVM_2.png'></p>
+<ul>
+<li><p>What makes this model a good candidate for the problem, given what you know about the data?</p>
+<p>This model works very accuratly on a smaller set of data and therefore it fits to given application very well.
+<img src='Naive_Bayes.png'></p>
+<ul>
+<li><p>What makes this model a good candidate for the problem, given what you know about the data?</p>
+<p>This model again is very accurate and simple to implement especially if the data set is small. Hence, i have selected it for evaluation.
+<img src='knn.png'></p>
+</li>
+</ul>
+</li>
+<li><p>What makes this model a good candidate for the problem, given what you know about the data?</p>
+<p>KNN  is one of the simplest classification algorithm and it can give highly competitive results. Hence, i selected this algorithm.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -12306,7 +12319,7 @@ Test set: 95 samples
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12379,7 +12392,7 @@ Test set: 95 samples
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12411,7 +12424,7 @@ Test set: 95 samples
 <span class="c1">#clf_B = DecisionTreeClassifier(random_state=0)</span>
 <span class="c1">#clf_C1 = RandomForestClassifier(n_estimators=10)</span>
 <span class="c1">#clf_C2 = GradientBoostingClassifier()</span>
-<span class="n">clf_D</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">clf_D</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 <span class="c1">#clf_E = linear_model.SGDClassifier()</span>
 <span class="n">clf_F</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">()</span>
 <span class="c1">#clf_G = LogisticRegression()</span>
@@ -12455,20 +12468,20 @@ Test set: 95 samples
 <pre>Running model 1
 (100, 48) (100,)
 Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0020 seconds
-Made predictions in 0.0000 seconds.
+Trained model in 0.0010 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.8550.
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0050 seconds.
 F1 score for test set: 0.7481.
 
 
 Running model 1
 (200, 48) (200,)
 Training a GaussianNB using a training set size of 200. . .
-Trained model in 0.0030 seconds
+Trained model in 0.0010 seconds
 Made predictions in 0.0000 seconds.
 F1 score for training set: 0.8321.
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0010 seconds.
 F1 score for test set: 0.7132.
 
 
@@ -12476,7 +12489,7 @@ Running model 1
 (300, 48) (300,)
 Training a GaussianNB using a training set size of 300. . .
 Trained model in 0.0000 seconds
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.8088.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7500.
@@ -12485,40 +12498,40 @@ F1 score for test set: 0.7500.
 Running model 2
 (100, 48) (100,)
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0000 seconds
+Trained model in 0.0010 seconds
 Made predictions in 0.0020 seconds.
-F1 score for training set: 0.8235.
-Made predictions in 0.0000 seconds.
-F1 score for test set: 0.6667.
+F1 score for training set: 0.7972.
+Made predictions in 0.0030 seconds.
+F1 score for test set: 0.7068.
 
 
 Running model 2
 (200, 48) (200,)
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0030 seconds
+Trained model in 0.0010 seconds
+Made predictions in 0.0050 seconds.
+F1 score for training set: 0.8571.
 Made predictions in 0.0020 seconds.
-F1 score for training set: 0.8612.
-Made predictions in 0.0030 seconds.
-F1 score for test set: 0.6667.
+F1 score for test set: 0.7121.
 
 
 Running model 2
 (300, 48) (300,)
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0020 seconds
-Made predictions in 0.0050 seconds.
-F1 score for training set: 0.8869.
-Made predictions in 0.0020 seconds.
-F1 score for test set: 0.7218.
+Trained model in 0.0010 seconds
+Made predictions in 0.0090 seconds.
+F1 score for training set: 0.8722.
+Made predictions in 0.0040 seconds.
+F1 score for test set: 0.7482.
 
 
 Running model 3
 (100, 48) (100,)
 Training a SVC using a training set size of 100. . .
-Trained model in 0.0000 seconds
-Made predictions in 0.0030 seconds.
+Trained model in 0.0010 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.8591.
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0010 seconds.
 F1 score for test set: 0.7838.
 
 
@@ -12528,15 +12541,15 @@ Training a SVC using a training set size of 200. . .
 Trained model in 0.0050 seconds
 Made predictions in 0.0020 seconds.
 F1 score for training set: 0.8693.
-Made predictions in 0.0030 seconds.
+Made predictions in 0.0010 seconds.
 F1 score for test set: 0.7755.
 
 
 Running model 3
 (300, 48) (300,)
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0070 seconds
-Made predictions in 0.0050 seconds.
+Trained model in 0.0090 seconds
+Made predictions in 0.0070 seconds.
 F1 score for training set: 0.8692.
 Made predictions in 0.0030 seconds.
 F1 score for test set: 0.7586.
@@ -12653,7 +12666,7 @@ F1 score for test set: 0.7586.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -12692,10 +12705,27 @@ F1 score for test set: 0.7586.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Made predictions in 0.0050 seconds.
+Tuned model has a training F1 score of 0.8372.
+Made predictions in 0.0020 seconds.
+Tuned model has a testing F1 score of 0.7943.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#print grid_obj.best_estimator_</span>
